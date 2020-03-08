@@ -1309,7 +1309,7 @@ p.price__descr {
 }
 
 .footer {
-    padding: 13px 0 35px;
+    padding: 10px 0 35px;
     width: 100%;
 }
 
@@ -1345,16 +1345,17 @@ p.price__descr {
     text-align: right;
     border: 1px solid #e7e8ea;
     border-radius: 5px;
+    display: inline-block;
+    line-height: 0;
+    letter-spacing: -.36em;
 }
 
 .footer__block--two {
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .footer__block--three {
-    padding-top: 12px;
-    margin-left: 270px;
-    display: inline-block;
+    padding-top: 8px;
     text-align: right;
 }
 
@@ -1369,33 +1370,24 @@ p.price__descr {
     border-right: none;
 }
 
-.footer__social_item a {
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+.footer__social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
 }
 
-.footer__social-link a {
-    /* width: 40px;
-    height: 40px; */
-    display: block;
-    position: absolute;
-    margin: 6px;
+.footer__social-link .twitter, 
+.footer__social-link .facebook,
+.footer__social-link .instagram {
+    fill: #d3d5d9;
 }
 
 .footer__social-link svg {
-    width: 37px;
-    height: 16px;
+    position: absolute;
     top: 50%;
     left: 50%;
-    text-align: center;
-    fill: #d3d5d9;
-    transition: all .3s;
-    margin: 6px 0 3px;
+    transform: translate(-50%, -50%);
 }
 
 .footer__social-link:hover svg {
